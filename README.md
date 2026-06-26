@@ -1,13 +1,17 @@
-# 🚀 HireSense – Full Stack Job Portal
+# 🚀 BlogHub – Full Stack Blogging Platform
 
-HireSense is a full-stack job portal web application built using **Java (JDK 21), JSP, Servlets, JDBC, MySQL, HTML, CSS, JavaScript, and Bootstrap**.
+BlogHub is a full-stack blogging web application built using **Java (JDK 21), Spring Boot, Spring Data JPA (Hibernate), MySQL, REST APIs, JSP, HTML, CSS, and JavaScript**.
 
-It provides a complete recruitment platform where:
+It provides a modern blogging platform where users can create, edit, manage, and explore blog posts with secure role-based access.
 
-* 💼 Employers can post and manage job openings
-* 👨‍💻 Job seekers can search and apply for jobs by uploading resumes
-* 📊 Resume matching calculates job-fit scores
-* 🔐 Role-based access (Admin / Employer / Job Seeker) ensures secure management
+## ✨ Features
+
+* ✍️ Create, edit, and delete blog posts
+* 🗂️ Organize posts by categories
+* 🔐 Role-based authentication (Admin / User)
+* ⚡ REST APIs for efficient backend communication
+* 📄 Pagination and sorting for blog posts
+* ✅ DTO-based validation and structured API responses
 
 ---
 
@@ -16,9 +20,9 @@ It provides a complete recruitment platform where:
 ## 🔹 Backend
 
 * Java (JDK 21)
-* JSP
-* Servlets
-* JDBC
+* Spring Boot
+* Spring Data JPA (Hibernate)
+* REST APIs
 * MySQL
 
 ## 🔹 Frontend
@@ -26,104 +30,123 @@ It provides a complete recruitment platform where:
 * HTML5
 * CSS3
 * JavaScript
-* Bootstrap
+* JSP
 
 ## 🔹 Tools & Utilities
 
-* Eclipse IDE
+* Spring Tool Suite (STS)
+* Maven
 * Git & GitHub
-* Apache Tomcat
-* Maven (if used)
 
 ---
 
-# ✨ Features
+# 👤 User Features
 
-## 👨‍💻 Job Seeker Features
-
-* Register & Login
-* Search jobs
-* Apply for jobs
-* Upload Resume
-* View applied jobs
-* Update profile
-
-## 🏢 Employer Features
-
-* Register & Login
-* Post new jobs
-* Edit & Delete job posts
-* View applicants
-* Manage job listings
-
-## 🛡️ Admin Features
-
-* Manage users
-* Manage employers
-* Manage job posts
-* Monitor platform activities
+* User Registration & Login
+* Session-based Authentication
+* Create Blog Posts
+* Edit Own Posts
+* Delete Own Posts
+* View Posts by Category
+* Pagination & Sorting
 
 ---
 
-# 📄 Resume Matching
+# 🛡️ Admin Features
 
-* Automated resume matching system
-* Calculates job-fit score
-* Helps employers shortlist suitable candidates
+* Manage Users
+* Manage Categories
+* Delete Inappropriate Posts
+* Full Control Over Platform Content
+
+---
+
+# 📝 Blog Management
+
+* Create, Update & Delete Posts
+* Category-wise Blog Organization
+* Pagination & Sorting Support
+* DTO-based Validation
+* Clean and Structured Data Handling
 
 ---
 
 # ⚙️ Backend Architecture
 
-* Layered Architecture (Servlet → Service → DAO → Database)
-* JDBC for database connectivity
-* Session-based Authentication
-* Role-Based Authorization
+* Layered Architecture (Controller → Service → Repository)
+* Spring Data JPA (Hibernate)
+* DTO Pattern
+* Global Exception Handling
+* Structured REST API Responses
 * MVC Design Pattern
 
 ---
 
-# 🗂️ Project Modules
+# 📂 Project Modules
 
 * Authentication Module
-* Job Management Module
-* Employer Module
-* Job Seeker Module
-* Resume Upload Module
+* User Management
+* Blog Management
+* Category Management
 * Admin Dashboard
+* REST API Layer
 
 ---
 
 # 🗃️ Database Tables
 
 * users
-* employers
-* jobs
-* applications
-* resumes
+* posts
+* categories
 
 ---
 
-# 🚀 How To Run The Project
+# 🚀 How to Run the Project
 
-1. Clone the repository
+### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/github.com/Manukumar7644/HireSense/HireSense.git
+git clone https://github.com/github.com/Manukumar7644/BlogHub-Blogging-Platform/BlogHub.git
 ```
 
-2. Import the project into Eclipse IDE.
+### 2️⃣ Open the Project
 
-3. Configure the MySQL database.
+Import the project into **Spring Tool Suite (STS), IntelliJ IDEA, or Eclipse**.
 
-4. Update database credentials in the JDBC configuration.
+### 3️⃣ Configure MySQL
 
-5. Deploy the project on Apache Tomcat Server.
+Update your `application.properties` file:
 
-6. Open your browser and visit:
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/bloghub
+spring.datasource.username=root
+spring.datasource.password=your_password
+```
+
+### 4️⃣ Run the Application
+
+Run the Spring Boot application as a **Java Application**.
+
+### 5️⃣ Open in Browser
 
 ```text
-http://localhost:8080/HireSense
+http://localhost:8080/
+```
+
+---
+
+# 📸 Project Screenshots
+
+> Add screenshots of your application here.
+
+Example:
+
+```
+screenshots/
+├── login.png
+├── dashboard.png
+├── create-post.png
+├── category.png
 ```
 
 ---
@@ -133,3 +156,5 @@ http://localhost:8080/HireSense
 **Manu Kumar**
 
 **B.Tech – Computer Science & Engineering**
+
+⭐ If you found this project useful, consider giving it a **Star** on GitHub!
